@@ -1,0 +1,112 @@
+@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
+@import url("https://fonts.cdnfonts.com/css/libre-caslon-text");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+
+/* font-family: "Manrope", sans-serif;
+font-family: 'Libre Caslon Condensed', sans-serif;
+font-family: 'Neue Haas Grotesk Display Pro', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: #fcfbf5;
+}
+
+.container {
+  width: 90%;
+
+  margin: auto;
+  /* background-color: blue; */
+}
+nav {
+  display: flex;
+  justify-content: center;
+  position: static;
+  gap: 2em;
+  height: 5vh;
+}
+
+.list-nav {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: rgb(188, 188, 188);
+  transition: 0.2s;
+}
+
+nav ul li a img {
+  cursor: pointer;
+  user-select: none;
+  width: 40px;
+}
+
+li {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid red;
+  height: 90vh;
+  margin-bottom: 50px;
+}
+
+.name {
+  font-family: "Libre Caslon Condensed", sans-serif;
+  font-style: italic;
+  font-size: 10vh;
+}
+
+.slashies {
+  color: rgba(0, 0, 0, 0.649);
+  font-size: 20px;
+}
+
+.titles {
+  font-weight: 700;
+  font-size: x-large;
+}
+.sub {
+  font-weight: 700;
+  font-size: large;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+}
+.box {
+  border: solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 10px;
+  line-height: 30px;
+}
+
+.aboutme {
+  height: 50vh;
+  border: solid red
+  ;
+  margin-bottom: 50px;
+}
