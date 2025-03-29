@@ -28,6 +28,7 @@ nav {
   position: static;
   gap: 2em;
   height: 5vh;
+  padding: 10px;
 }
 
 .list-nav {
@@ -48,10 +49,10 @@ a:hover {
   transition: 0.2s;
 }
 
-nav ul li a img {
+nav ul img {
   cursor: pointer;
   user-select: none;
-  width: 40px;
+  width: 45px;
 }
 
 li {
@@ -60,6 +61,8 @@ li {
 }
 
 .hero {
+  background-image: url(images/Artboard2.png);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
