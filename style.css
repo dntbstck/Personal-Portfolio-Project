@@ -14,6 +14,7 @@ font-family: 'Neue Haas Grotesk Display Pro', sans-serif; */
 
 body {
   background-color: #fcfbf5;
+  
 }
 
 .container {
@@ -63,6 +64,7 @@ li {
 .hero {
   background-image: url(images/Artboard2.png);
   background-size: cover;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,18 +87,26 @@ li {
 
 .titles {
   font-weight: 700;
-  font-size: x-large;
+  font-size: xx-large;
 }
 .sub {
   font-weight: 700;
   font-size: large;
 }
 
-.grid-container {
+/* .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
-}
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1em;
+    /* border: solid red; */
+  }
+
 .box {
   /* border: solid red; */
   display: flex;
