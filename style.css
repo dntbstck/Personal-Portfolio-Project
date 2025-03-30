@@ -1,10 +1,39 @@
-@import url("https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro");
-@import url("https://fonts.cdnfonts.com/css/libre-caslon-text");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&display=swap");
 
+@font-face {
+  font-family: "Libre Caslon Condensed", sans-serif;
+  src: url(https://fonts.cdnfonts.com/css/libre-caslon-text);
+}
 /* font-family: "Manrope", sans-serif;
 font-family: 'Libre Caslon Condensed', sans-serif;
 font-family: 'Neue Haas Grotesk Display Pro', sans-serif; */
+
+/* .libre-caslon-text-regular {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-caslon-text-bold {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libre-caslon-text-regular-italic {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.manrope-<uniquifier> {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+ */
 
 :root {
   --background-color: #fcfbf5;
@@ -35,7 +64,7 @@ body {
 
 header {
   background-color: var(--background-color);
- /*  filter: drop-shadow(0 0 0.4rem #fcfbf5); */
+  /*  filter: drop-shadow(0 0 0.4rem #fcfbf5); */
 }
 
 .nav__container {
@@ -61,17 +90,15 @@ a {
   transition: all 0.2s;
 }
 
-.active__link{
+.active__link {
   color: var(--dropshadow-hover);
   filter: drop-shadow(0 0 0.6rem);
-  
 }
 
 .nav__links:hover,
 .nav__links:focus {
   color: var(--dropshadow-hover);
   filter: drop-shadow(0 0 0.6rem);
-  
 }
 
 #nav__logo {
@@ -81,14 +108,13 @@ a {
   stroke-linejoin: round;
   stroke-width: 6rem;
   stroke: rgba(0, 0, 0, 0.842);
-  transition: all 0.5s ;
-  
+  transition: all 0.5s;
 }
 
-#nav__logo:hover{
+#nav__logo:hover {
   cursor: pointer;
   transform: rotate(180deg);
-  fill: var(--black) ;
+  fill: var(--black);
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 6rem;
@@ -115,7 +141,8 @@ a {
 }
 
 .hero__title {
-  font-family: "Libre Caslon Condensed", sans-serif;
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 700;
   font-style: italic;
   filter: drop-shadow(0 0 0.4rem rgba(73, 72, 72, 0.433));
   font-size: calc(1rem + 5vw);
@@ -127,32 +154,30 @@ a {
   font-size: calc(0.55rem + 0.5vw);
 }
 
-
 /* Page Projets */
 
-.projects__wrapper{
+.projects__wrapper {
   /* border: solid green; */
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
 }
-.section__projects{
+.section__projects {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   /* border: solid; */
 }
 
-.section__projects__title{
+.section__projects__title {
   font-size: large;
 }
 
-.section__projects__text{
+.section__projects__text {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
 }
 
-.stickers__grid__wrapper{
-
+.stickers__grid__wrapper {
 }
