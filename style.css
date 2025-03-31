@@ -154,6 +154,34 @@ a {
   font-size: calc(0.55rem + 0.5vw);
 }
 
+.hero__resume{
+  width: 30rem;
+  object-fit: cover;
+}
+.cv__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 3rem;
+  
+}
+
+.hero__button{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+
+.pdf__container{
+  display: flex;
+  justify-content: center;
+  
+  width: 50vw;
+}
+
 /* Page Projets */
 
 .projects__wrapper {
@@ -178,6 +206,92 @@ a {
   flex-direction: column;
   row-gap: 1rem;
 }
-/* 
-.stickers__grid__wrapper {
+
+
+.stickers__cards__wrapper {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+gap: 5rem;
+
+
+
+}
+
+.cards{
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  filter: drop-shadow(0 0 0.35rem rgba(142, 140, 140, 0.177));
+  padding: 1rem;
+  transition: all .2s; /* Animation */
+  border: solid;
+}
+
+/* .card__1{
+  
+}
+.card__2{
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  filter: drop-shadow(0 0 0.35rem rgba(142, 140, 140, 0.177));
+  padding: 1rem;
+  transition: all .2s;
+  border: solid;
+}
+.card__3{
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  filter: drop-shadow(0 0 0.35rem rgba(142, 140, 140, 0.177));
+  padding: 1rem;
+  transition: all .2s;
+  border: solid;
+}
+.card__4{
+  background-color: var(--background-color);
+  border-radius: 1rem;
+  filter: drop-shadow(0 0 0.35rem rgba(142, 140, 140, 0.177));
+  padding: 1rem;
+  transition: all .4s;
+  border: solid;
 } */
+
+.stickers__cards__wrapper div img{
+  width: 100%;
+  border-radius: 1em;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: solid;
+}
+
+.stickers__cards__wrapper div:hover{
+  
+  cursor: pointer;
+  transform: scale(0.99);
+}
+
+.grey-on-hover {
+  position: relative;
+  cursor: pointer;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.116);
+    transition: opacity .3s;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  &:hover:before {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gallery, .cards {
+      grid-template-columns: 1fr; /* Une seule colonne sur petit écran */
+  }
+}
