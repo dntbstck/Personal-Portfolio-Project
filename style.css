@@ -154,31 +154,28 @@ a {
   font-size: calc(0.55rem + 0.5vw);
 }
 
-.hero__resume{
+.hero__resume {
   width: 30rem;
   object-fit: cover;
 }
-.cv__container{
+.cv__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   row-gap: 3rem;
-  
 }
 
-.hero__button{
+.hero__button {
   border: none;
   background: none;
   cursor: pointer;
 }
 
-
-
-.pdf__container{
+.pdf__container {
   display: flex;
   justify-content: center;
-  
+
   width: 50vw;
 }
 
@@ -207,22 +204,18 @@ a {
   row-gap: 1rem;
 }
 
-
 .stickers__cards__wrapper {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-gap: 5rem;
-
-
-
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 5rem;
 }
 
-.cards{
+.cards {
   background-color: var(--background-color);
   border-radius: 1rem;
   filter: drop-shadow(0 0 0.35rem rgba(142, 140, 140, 0.177));
   padding: 1rem;
-  transition: all .2s; /* Animation */
+  transition: all 0.2s; /* Animation */
   border: solid;
 }
 
@@ -254,7 +247,7 @@ gap: 5rem;
   border: solid;
 } */
 
-.stickers__cards__wrapper div img{
+.stickers__cards__wrapper div img {
   width: 100%;
   border-radius: 1em;
   aspect-ratio: 1 / 1;
@@ -262,8 +255,7 @@ gap: 5rem;
   border: solid;
 }
 
-.stickers__cards__wrapper div:hover{
-  
+.stickers__cards__wrapper div:hover {
   cursor: pointer;
   transform: scale(0.99);
 }
@@ -271,7 +263,7 @@ gap: 5rem;
 .grey-on-hover {
   position: relative;
   cursor: pointer;
-  
+
   &:before {
     content: "";
     position: absolute;
@@ -280,7 +272,7 @@ gap: 5rem;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.116);
-    transition: opacity .3s;
+    transition: opacity 0.3s;
     opacity: 0;
     z-index: 2;
   }
@@ -291,31 +283,121 @@ gap: 5rem;
 }
 
 @media screen and (max-width: 600px) {
-  .gallery, .cards {
-      grid-template-columns: 1fr; /* Une seule colonne sur petit écran */
+  .gallery,
+  .cards {
+    grid-template-columns: 1fr; /* Une seule colonne sur petit écran */
   }
 }
 
-
 /* Page Galerie Photo */
 
-.gallery__wrapper{
+.gallery__wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 1rem;
 }
 
-.gallery__images{
+.gallery__images {
   width: 100%;
   height: auto;
   object-fit: cover;
   user-select: none;
 }
 
-.footer__credit{
+.footer__credit {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   color: var(--black);
 }
+
+/* Page à propos */
+
+/* .àpropos__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+ */
+
+
+.àpropos__right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  justify-content: center;
+  
+  
+}
+
+.àpropos__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+}
+
+.àpropos__text_header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.àpropos__text_header h3 {
+  color: rgb(104, 104, 104);
+}
+
+.àpropos__left{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.àpropos__image img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  user-select: none;
+}
+
+.àpropos__image  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.àpropos__contact__list {
+  padding: 1rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  column-gap: 3rem;
+  row-gap: 1rem;
+}
+
+.àpropos__contact__list div {
+  border: solid;
+  border-radius: 0.5rem;
+  background-color: var(--black);
+  color: var(--background-color);
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  filter: drop-shadow(0 0 0.35rem rgba(142, 140, 140, 0.177));
+
+  transition: all 0.2s;
+}
+
+.àpropos__contact__list div:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
